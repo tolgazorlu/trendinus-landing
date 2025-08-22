@@ -1,13 +1,18 @@
-import { useEffect, useState } from "react";
-
 import { Particles } from "@/components/magicui/particles";
+import { AuroraText } from "@/components/magicui/aurora-text";
+import { AnimatedBeamMultipleOutputDemo } from "./HeroAnimatedBeam";
 
 export function Hero() {
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-black">
-      <span className="pointer-events-none z-10 whitespace-pre-wrap text-center text-6xl font-semibold leading-none text-white">
-        Get Your Game to Streamers
-      </span>
+    <div className="flex h-screen w-full flex-col items-center justify-center bg-black">
+      <div className="relative z-10 mb-8 text-center">
+        <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl text-white">
+          <AuroraText>Game to Influencers</AuroraText>
+        </h1>
+      </div>
+
+      <AnimatedBeamMultipleOutputDemo />
+
       <Particles
         className="absolute inset-0 z-0"
         quantity={100}
