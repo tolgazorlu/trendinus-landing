@@ -231,19 +231,19 @@ export function AnimatedBeamMultipleOutputDemo({
         containerRef={containerRef}
         fromRef={div1Ref}
         toRef={div6Ref}
-        duration={8}
+        duration={2}
       />
       <AnimatedBeam
         containerRef={containerRef}
         fromRef={div2Ref}
         toRef={div6Ref}
-        duration={8}
+        duration={4}
       />
       <AnimatedBeam
         containerRef={containerRef}
         fromRef={div3Ref}
         toRef={div6Ref}
-        duration={8}
+        duration={6}
       />
       <AnimatedBeam
         containerRef={containerRef}
@@ -255,13 +255,13 @@ export function AnimatedBeamMultipleOutputDemo({
         containerRef={containerRef}
         fromRef={div5Ref}
         toRef={div6Ref}
-        duration={8}
+        duration={10}
       />
       <AnimatedBeam
         containerRef={containerRef}
         fromRef={div6Ref}
         toRef={div7Ref}
-        duration={8}
+        duration={2}
       />
     </div>
   );
