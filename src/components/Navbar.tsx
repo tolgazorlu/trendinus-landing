@@ -2,28 +2,28 @@ const Navbar = () => {
   return (
     <>
       <header className="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
-        <nav className="mt-4 relative max-w-2xl w-full bg-black/50 backdrop-blur-sm mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-1 ps-4 md:py-0 sm:mx-auto dark:bg-neutral-900 dark:border-neutral-700">
+        <nav className="mt-4 relative max-w-6xl w-full bg-black/80 backdrop-blur-xl mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-2 ps-4 md:py-2 sm:mx-auto border border-purple-500/20 shadow-[0_0_30px_rgba(147,51,234,0.3)] rounded-xl">
           <div className="flex items-center">
             <a
-              className="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80 text-white"
+              className="flex-none rounded-lg text-xl inline-block font-bold focus:outline-hidden focus:opacity-80 text-white bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent hover:from-purple-300 hover:via-pink-300 hover:to-purple-500 transition-all duration-300"
               href="../templates/personal/index.html"
-              aria-label="Preline"
+              aria-label="Trendinus"
             >
-              Logo
+              TRENDINUS
             </a>
             <div className="ms-1 sm:ms-2"></div>
           </div>
-          <div className="flex items-center gap-1 md:order-4 md:ms-4">
+          <div className="flex items-center gap-2 md:order-4 md:ms-4">
             <a
-              className="w-full sm:w-auto whitespace-nowrap py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200"
+              className="w-full sm:w-auto whitespace-nowrap py-2.5 px-6 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-purple-500/50 bg-gradient-to-r from-purple-600/80 to-pink-600/80 text-white hover:from-purple-500 hover:to-pink-500 focus:outline-hidden focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:pointer-events-none shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_30px_rgba(147,51,234,0.6)] transition-all duration-300"
               href="#"
             >
-              Book a call
+              🎮 Book a Call
             </a>
             <div className="md:hidden">
               <button
                 type="button"
-                className="hs-collapse-toggle flex justify-center items-center size-9.5 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                className="hs-collapse-toggle flex justify-center items-center size-10 border border-purple-500/30 text-purple-300 rounded-lg hover:bg-purple-500/20 focus:outline-hidden focus:bg-purple-500/20 focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-black transition-all duration-300"
                 id="hs-navbar-header-floating-collapse"
                 aria-expanded="false"
                 aria-controls="hs-navbar-header-floating"
@@ -31,7 +31,7 @@ const Navbar = () => {
                 data-hs-collapse="#hs-navbar-header-floating"
               >
                 <svg
-                  className="hs-collapse-open:hidden shrink-0 size-3.5"
+                  className="hs-collapse-open:hidden shrink-0 size-4"
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
                   height={24}
@@ -69,25 +69,25 @@ const Navbar = () => {
             className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
             aria-labelledby="hs-navbar-header-floating-collapse"
           >
-            <div className="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-6 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
               <a
-                className="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-gray-800 font-medium text-gray-800 hover:text-gray-800 focus:outline-hidden dark:border-neutral-200 dark:text-neutral-200 dark:hover:text-neutral-200"
+                className="py-2 md:py-3 px-4 md:px-2 border-s-2 md:border-s-0 md:border-b-2 border-purple-400 font-semibold text-purple-300 hover:text-purple-200 focus:outline-hidden transition-colors duration-300"
                 href="#"
                 aria-current="page"
               >
-                Home
+                🏠 Home
               </a>
               <a
-                className="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
+                className="py-2 md:py-3 px-4 md:px-2 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-300 hover:text-purple-300 hover:border-purple-400/50 focus:outline-hidden transition-all duration-300"
                 href="#"
               >
-                Work
+                🎯 Work
               </a>
               <a
-                className="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
+                className="py-2 md:py-3 px-4 md:px-2 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-300 hover:text-purple-300 hover:border-purple-400/50 focus:outline-hidden transition-all duration-300"
                 href="#"
               >
-                Reviews
+                ⭐ Reviews
               </a>
             </div>
           </div>
