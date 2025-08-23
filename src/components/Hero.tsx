@@ -23,7 +23,7 @@ export function Hero() {
         </p>
       </div>
 
-      <div className="relative z-10 mb-8">
+      <div className="relative z-10 mb-8 hidden lg:block">
         <AnimatedBeamMultipleOutputDemo />
       </div>
 
