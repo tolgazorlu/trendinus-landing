@@ -2,14 +2,14 @@ const Navbar = () => {
   return (
     <>
       <header className="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
-        <nav className="mt-4 relative max-w-6xl w-full bg-black/80 backdrop-blur-xl mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-2 ps-4 md:py-2 sm:mx-auto border border-purple-500/20 shadow-[0_0_30px_rgba(147,51,234,0.3)] rounded-xl">
+        <nav className="mt-4 relative max-w-6xl w-full bg-black/80 backdrop-blur-xl mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-2 ps-4 md:py-2 sm:mx-auto border border-purple-500/20 shadow-[0_0_30px_rgba(147,51,234,0.3)] rounded-4xl">
           <div className="flex items-center">
             <a
               className="flex-none rounded-lg text-xl inline-block font-bold focus:outline-hidden focus:opacity-80 text-white bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent hover:from-purple-300 hover:via-pink-300 hover:to-purple-500 transition-all duration-300"
               href="../templates/personal/index.html"
               aria-label="Trendinus"
             >
-              TRENDINUS
+              trendinus
             </a>
             <div className="ms-1 sm:ms-2"></div>
           </div>
@@ -18,7 +18,7 @@ const Navbar = () => {
               className="w-full sm:w-auto whitespace-nowrap py-2.5 px-6 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-purple-500/50 bg-gradient-to-r from-purple-600/80 to-pink-600/80 text-white hover:from-purple-500 hover:to-pink-500 focus:outline-hidden focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:pointer-events-none shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_30px_rgba(147,51,234,0.6)] transition-all duration-300"
               href="#"
             >
-              🎮 Book a Call
+              Book a Call
             </a>
             <div className="md:hidden">
               <button

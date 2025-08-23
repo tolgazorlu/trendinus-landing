@@ -49,14 +49,6 @@ export function AnimatedBeamMultipleOutputDemo({
       <div className="flex size-full w-4xl flex-row items-stretch justify-between gap-12">
         <div className="flex flex-col justify-center">
           <Circle
-            ref={div7Ref}
-            className="size-20 bg-gradient-to-br from-purple-600/80 to-pink-600/80 border-purple-400/70"
-          >
-            <span className="text-2xl">🎯</span>
-          </Circle>
-        </div>
-        <div className="flex flex-col justify-center">
-          <Circle
             ref={div6Ref}
             className="size-20 bg-gradient-to-br from-blue-600/80 to-cyan-600/80 border-blue-400/70"
           >
