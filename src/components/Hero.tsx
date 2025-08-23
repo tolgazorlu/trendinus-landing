@@ -1,17 +1,8 @@
-import { useState } from "react";
 import { Particles } from "@/components/magicui/particles";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { AnimatedBeamMultipleOutputDemo } from "./HeroAnimatedBeam";
 
 export function Hero() {
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleStartClick = () => {
-    setIsAnimating(true);
-    // Reset animation after a duration
-    setTimeout(() => setIsAnimating(false), 8000);
-  };
-
   return (
     <div className="relative flex w-full flex-col items-center justify-center min-h-screen bg-black pt-24">
       <div className="relative z-10 mb-12 text-center px-4">

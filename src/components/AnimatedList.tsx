@@ -1,5 +1,3 @@
-"use client";
-
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/magicui/animated-list";
 
@@ -51,13 +49,7 @@ let notifications = [
 
 notifications = Array.from({ length: 10 }, () => notifications).flat();
 
-const PlatformIcon = ({
-  platform,
-  color,
-}: {
-  platform: string;
-  color: string;
-}) => {
+const PlatformIcon = ({ platform }: { platform: string; color: string }) => {
   const iconProps = {
     className: "w-5 h-5",
     style: { fill: "#fff" },
