@@ -1,56 +1,83 @@
 const pricingPlans = [
   {
-    name: "Gamer",
-    price: "Free",
-    period: "Forever",
-    description: "Perfect for starting your gaming influence journey",
+    name: "Starter",
+    price: "$25",
+    period: "100 emails",
+    description: "Perfect for indie developers testing the waters",
     features: [
-      "Basic profile creation",
-      "Community access",
-      "5 brand applications/month",
-      "Basic analytics",
-      "Email support"
+      "100 targeted emails to streamers",
+      "Email with demo link or Steam key",
+      "Basic streamer matching",
+      "No open guarantee"
     ],
     popular: false,
-    buttonText: "Get Started Free",
-    buttonStyle: "border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10"
+    buttonText: "Buy Now",
+    buttonStyle: "border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10",
+    purchaseUrl: "https://bariserdem.lemonsqueezy.com/buy/91cd2b3c-64ec-44ac-aaa1-fb1d9ab899d6"
   },
   {
-    name: "Creator",
-    price: "$29",
-    period: "per month",
-    description: "For serious content creators ready to monetize",
+    name: "Indie Boost",
+    price: "$49",
+    period: "250 emails",
+    description: "For developers ready to reach more streamers",
     features: [
-      "Everything in Gamer",
-      "Unlimited brand applications",
-      "Advanced analytics & insights",
-      "Campaign management tools",
-      "Priority brand matching",
-      "Content creation templates",
-      "Priority support"
+      "250 targeted emails to streamers",
+      "Same content as Starter",
+      "Enhanced streamer matching",
+      "No open guarantee"
+    ],
+    popular: false,
+    buttonText: "Buy Now",
+    buttonStyle: "border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10",
+    purchaseUrl: "https://bariserdem.lemonsqueezy.com/buy/23c63ab1-d818-47c4-a059-5bf499d5f84d"
+  },
+  {
+    name: "Standard",
+    price: "$89",
+    period: "500 emails",
+    description: "Most popular choice with guaranteed results",
+    features: [
+      "500 targeted emails to streamers",
+      "Campaign tracking & follow-up list",
+      "At least 150 email opens guaranteed",
+      "Performance report included"
     ],
     popular: true,
-    buttonText: "Start Creating",
-    buttonStyle: "bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-500 hover:to-pink-500"
+    buttonText: "Buy Now",
+    buttonStyle: "bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-500 hover:to-pink-500",
+    purchaseUrl: "https://bariserdem.lemonsqueezy.com/buy/9bf2c69f-58f6-4470-8e4a-7e923b4cb486"
   },
   {
-    name: "Influencer",
-    price: "$99",
-    period: "per month", 
-    description: "For established influencers scaling their empire",
+    name: "Pro Launch",
+    price: "$149",
+    period: "1000 emails", 
+    description: "For serious game launches with premium support",
     features: [
-      "Everything in Creator",
-      "White-label solutions",
-      "Dedicated account manager",
-      "Custom brand partnerships",
-      "Advanced audience insights",
-      "Multi-platform management",
-      "Revenue optimization tools",
-      "24/7 premium support"
+      "1000 targeted emails to streamers",
+      "Advanced tracking & performance summary",
+      "At least 300 email opens guaranteed",
+      "Priority support included"
     ],
     popular: false,
-    buttonText: "Scale Your Empire",
-    buttonStyle: "border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10"
+    buttonText: "Buy Now",
+    buttonStyle: "border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10",
+    purchaseUrl: "https://bariserdem.lemonsqueezy.com/buy/a5b74591-30b9-4aa5-aa12-34a4b9ef68ca"
+  },
+  {
+    name: "Power Push",
+    price: "$399",
+    period: "2000 emails",
+    description: "Maximum reach with comprehensive reporting",
+    features: [
+      "2000 targeted emails to streamers",
+      "Comprehensive report & priority support",
+      "At least 600 email opens guaranteed",
+      "Dedicated campaign manager"
+    ],
+    popular: false,
+    buttonText: "Buy Now",
+    buttonStyle: "border-2 border-purple-500 text-purple-300 hover:bg-purple-500/10",
+    purchaseUrl: "https://bariserdem.lemonsqueezy.com/buy/a5b74591-30b9-4aa5-aa12-34a4b9ef68ca"
   }
 ];
 
@@ -62,15 +89,15 @@ export function Pricing() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Choose Your
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              {" "}Gaming Plan
+              {" "}Package
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Start free and upgrade as you grow. No hidden fees, cancel anytime.
+            Get your game to Twitch streamers with guaranteed reach and fast delivery.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <div 
               key={index} 
@@ -102,9 +129,14 @@ export function Pricing() {
                   )}
                 </div>
 
-                <button className={`w-full py-4 px-6 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(147,51,234,0.3)] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] ${plan.buttonStyle}`}>
+                <a 
+                  href={plan.purchaseUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={`block w-full py-4 px-6 rounded-full font-bold text-lg text-center transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(147,51,234,0.3)] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] ${plan.buttonStyle}`}
+                >
                   {plan.buttonText}
-                </button>
+                </a>
               </div>
 
               <div className="space-y-4">
@@ -126,21 +158,21 @@ export function Pricing() {
           ))}
         </div>
 
-        {/* FAQ or Additional Info */}
+        {/* Additional Info */}
         <div className="mt-16 text-center">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="p-6 rounded-2xl bg-gradient-to-r from-purple-900/20 to-transparent border border-purple-500/20">
-              <h3 className="text-xl font-bold text-white mb-3">💳 No Setup Fees</h3>
+              <h3 className="text-xl font-bold text-white mb-3">⚡ Fast Delivery</h3>
               <p className="text-gray-300">
-                Get started immediately with no hidden costs or setup fees. 
-                Pay only for what you use.
+                Campaigns are usually sent out within 24–48 hours of your purchase. 
+                You'll be notified once completed.
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-gradient-to-r from-purple-900/20 to-transparent border border-purple-500/20">
-              <h3 className="text-xl font-bold text-white mb-3">🔄 Cancel Anytime</h3>
+              <h3 className="text-xl font-bold text-white mb-3">🎯 Targeted Matching</h3>
               <p className="text-gray-300">
-                No long-term commitments. Upgrade, downgrade, or cancel 
-                your subscription at any time.
+                We match your game with streamers who have previously played 
+                similar titles for better engagement.
               </p>
             </div>
           </div>
