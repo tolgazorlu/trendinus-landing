@@ -1,5 +1,3 @@
-import React from "react";
-
 const footerLinks = {
   product: [
     { name: "Features", href: "#features" },
@@ -35,7 +33,11 @@ const socialLinks = [
   { name: "Twitter", icon: "🐦", href: "https://twitter.com/trendinus" },
   { name: "YouTube", icon: "📺", href: "https://youtube.com/trendinus" },
   { name: "Twitch", icon: "🎮", href: "https://twitch.tv/trendinus" },
-  { name: "LinkedIn", icon: "💼", href: "https://linkedin.com/company/trendinus" },
+  {
+    name: "LinkedIn",
+    icon: "💼",
+    href: "https://linkedin.com/company/trendinus",
+  },
 ];
 
 const Footer = () => {
@@ -51,8 +53,8 @@ const Footer = () => {
                 TRENDINUS
               </h3>
               <p className="text-gray-300 mt-3 leading-relaxed">
-                Transform your gaming passion into influence and income. 
-                Join the revolution of gaming creators.
+                Transform your gaming passion into influence and income. Join
+                the revolution of gaming creators.
               </p>
             </div>
 
@@ -147,7 +149,8 @@ const Footer = () => {
               Stay in the Game
             </h3>
             <p className="text-gray-400 mb-6 text-sm">
-              Get the latest gaming trends, creator tips, and exclusive opportunities.
+              Get the latest gaming trends, creator tips, and exclusive
+              opportunities.
             </p>
             <div className="flex gap-3">
               <input
@@ -166,7 +169,8 @@ const Footer = () => {
         <div className="border-t border-purple-500/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2024 Trendinus. All rights reserved. Built for gamers, by gamers.
+              © 2025 Trendinus. All rights reserved. Built for gamers, by
+              gamers.
             </p>
             <div className="flex items-center gap-6 text-sm text-gray-400">
               <span>🎮 Supporting 50+ Games</span>

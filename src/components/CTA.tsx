@@ -1,4 +1,3 @@
-import React from "react";
 import { Particles } from "@/components/magicui/particles";
 
 const CTA = () => {
@@ -13,8 +12,8 @@ const CTA = () => {
             </span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Join thousands of gamers who've turned their passion into a 
-            thriving influencer career. Start your journey today.
+            Join thousands of gamers who've turned their passion into a thriving
+            influencer career. Start your journey today.
           </p>
         </div>
 
@@ -25,7 +24,7 @@ const CTA = () => {
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </button>
-          
+
           <button className="px-10 py-5 border-2 border-purple-500 text-purple-300 font-bold text-lg rounded-full hover:bg-purple-500/10 hover:border-purple-400 transform hover:scale-105 transition-all duration-300 backdrop-blur-sm">
             📞 Schedule Demo
           </button>
@@ -34,17 +33,23 @@ const CTA = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="p-6">
             <div className="text-3xl mb-2">⚡</div>
-            <h3 className="text-2xl font-bold text-white mb-2">Instant Setup</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">
+              Instant Setup
+            </h3>
             <p className="text-gray-400">Get started in under 5 minutes</p>
           </div>
           <div className="p-6">
             <div className="text-3xl mb-2">🎯</div>
-            <h3 className="text-2xl font-bold text-white mb-2">Smart Matching</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">
+              Smart Matching
+            </h3>
             <p className="text-gray-400">AI-powered brand partnerships</p>
           </div>
           <div className="p-6">
             <div className="text-3xl mb-2">💎</div>
-            <h3 className="text-2xl font-bold text-white mb-2">Premium Support</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">
+              Premium Support
+            </h3>
             <p className="text-gray-400">24/7 dedicated success team</p>
           </div>
         </div>
