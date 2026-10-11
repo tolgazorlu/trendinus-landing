@@ -188,7 +188,7 @@ trendinus-landing/
     tsconfig.json         # TypeScript configuration
 ```
 
-## <� Customization
+## Customization
 
 ### Styling
 
